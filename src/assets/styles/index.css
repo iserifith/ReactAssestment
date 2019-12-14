@@ -1,0 +1,5 @@
+@import "./tailwind.css";
+
+.avatar {
+  margin-top: -100px;
+}
