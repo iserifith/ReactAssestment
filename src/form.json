@@ -2,13 +2,6 @@
   "title": "This is a title for the form Header",
   "questions": [
     {
-      "id": 2446,
-      "question_type": "OptionQuestion",
-      "prompt": "What is your preferred opt?",
-      "options": ["Option 1", "Option 2", "Option 3"],
-      "is_required": true
-    },
-    {
       "id": 2447,
       "question_type": "TextQuestion",
       "prompt": "What is your first answer?",
@@ -19,14 +12,14 @@
       "id": 2448,
       "question_type": "TextQuestion",
       "prompt": "What is your second answer?",
-      "is_required": false,
+      "is_required": true,
       "min_char_length": 100
     },
     {
       "id": 2500,
       "question_type": "TextQuestion",
       "prompt": "What is your third answer?",
-      "is_required": false,
+      "is_required": true,
       "min_char_length": 1
     }
   ]
