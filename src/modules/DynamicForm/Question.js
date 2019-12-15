@@ -30,7 +30,7 @@ const Question = ({
 
       case "OptionQuestion":
         return options.map((option, i) => (
-          <div>
+          <div key={i}>
             <input
               onChange={() => setOptionFieldValue(index, i)}
               checked={value[i]}
