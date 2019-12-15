@@ -44,13 +44,14 @@ function App() {
 
   return (
     <>
-      <div className="fixed top-0 right-0">
+      <div className="fixed top-0 right-0 p-5">
         <button
+          className="outline-none"
           onClick={() => {
             setRouteIndex(prevState => (prevState !== 0 ? 0 : 1));
           }}
         >
-          toggle
+          {routeIndex === 0 ? "ProfilePage" : "DynamicForm"}
         </button>
       </div>
       <div className="w-full">{renderCurrentPage()}</div>
