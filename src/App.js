@@ -42,7 +42,20 @@ function App() {
     return <Component form={form} initialFields={initialFields} />;
   };
 
-  return <div className="w-full">{renderCurrentPage()}</div>;
+  return (
+    <>
+      <div className="fixed top-0 right-0">
+        <button
+          onClick={() => {
+            setRouteIndex(prevState => (prevState !== 0 ? 0 : 1));
+          }}
+        >
+          toggle
+        </button>
+      </div>
+      <div className="w-full">{renderCurrentPage()}</div>
+    </>
+  );
 }
 
 export default App;
