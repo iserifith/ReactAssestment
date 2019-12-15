@@ -76,7 +76,7 @@ const DynamicForm = ({ form, initialFields }) => {
         <Base>
           <Form />
         </Base>
-        <Debug />
+        {/* <Debug /> */}
       </div>
     </FormContext.Provider>
   );
