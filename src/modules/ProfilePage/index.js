@@ -1,4 +1,5 @@
 import React from "react";
+import ExtendText from "./ExtendText";
 
 const ProfilePage = () => {
   return (
@@ -44,24 +45,43 @@ const ProfilePage = () => {
         <div className="lg:w-2/3 flex flex-col lg:mr-1">
           <div className="p-5 text-pink-600 lg:border-2 border-pink-600 mb-2 lg:rounded">
             <p className="font-1xl font-extrabold">About</p>
-            <p>
+            <ExtendText limit={200}>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ea commodo consequat. Duis aute irure dolor in
-            </p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ea commodo consequat. Duis aute irure dolor in
+            </ExtendText>
           </div>
+          <hr className="lg:hidden" />
           <div className="p-5 text-pink-600 lg:border-2 border-pink-600 mt-2 lg:rounded">
-            <p className="font-1xl font-extrabold">About</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
-              commodi, assumenda quo officia officiis soluta facilis ratione
-              cumque nam. Odit architecto qui iste? Ea, quos accusantium
-              veritatis et cupiditate nemo!
-            </p>
+            <p className="font-1xl font-extrabold">Gallery</p>
+            <div className="flex flex-row justify-between items-center">
+              <div>
+                <img src="https://i.pravatar.cc/150" alt="gallery"></img>
+              </div>
+              <div>
+                <img src="https://i.pravatar.cc/150" alt="gallery"></img>
+              </div>
+              <div className="hidden md:block">
+                <img src="https://i.pravatar.cc/150" alt="gallery"></img>
+              </div>
+              <div className="view_more">
+                <img
+                  className="cursor-pointer"
+                  src="https://i.pravatar.cc/150"
+                  alt="gallery"
+                ></img>
+                <div className="font-extrabold text-sm">+12 view all</div>
+              </div>
+            </div>
           </div>
+          <hr className="lg:hidden" />
         </div>
-        <div className="lg:w-1/3 p-5 text-pink-600 lg:ml-1 lg:border-2 border-pink-600 text-center lg:text-left lg:rounded">
+        <div className="hidden md:block lg:w-1/3 p-5 text-pink-600 lg:ml-1 lg:border-2 border-pink-600 text-center lg:text-left lg:rounded">
           <p className="font-extrabold">Need this service?</p>
           <p className="my-2">
             Hire best service providers for your everyday needs from Kaodim.
@@ -77,7 +97,9 @@ const ProfilePage = () => {
           <p className="text-sm text-center mt-1">Terms & conditions apply</p>
         </div>
       </div>
-      <div className="w-full flex flex-col lg:flex-row mb-10">
+      <hr className="lg:hidden" />
+
+      <div className="w-full flex flex-col lg:flex-row mb-32 md:mb-10">
         <div className="lg:border-2 border-pink-600 lg:w-2/3 py-5 lg:mr-1 lg:rounded">
           <p className="font-1xl font-extrabold text-pink-600 px-5">
             Ratings and Reviews
@@ -147,26 +169,26 @@ const ProfilePage = () => {
             <p className="font-1xl font-extrabold text-pink-600 px-5">
               Compliments
             </p>
-            <div className="flex flex-row flex-wrap px-5 my-2 justify-around">
-              <div className="border-2 rounded shadow border-pink-600 lg:w-2/5 w-4/5 my-1">
+            <div className="flex flex-col lg:flex-row flex-wrap px-5 my-2 justify-around">
+              <div className="border-2 rounded shadow border-pink-600 lg:w-2/5 w-full my-1">
                 <div className="p-3 text-pink-600">
                   <p className="font-2xl font-extrabold">Reasonable Price</p>
                   <p>92 Compliments</p>
                 </div>
               </div>
-              <div className="border-2 rounded shadow border-pink-600 lg:w-2/5 w-4/5 my-1">
+              <div className="border-2 rounded shadow border-pink-600 lg:w-2/5 w-full my-1">
                 <div className="p-3 text-pink-600">
                   <p className="font-2xl font-extrabold">Reasonable Price</p>
                   <p>92 Compliments</p>
                 </div>
               </div>
-              <div className="border-2 rounded shadow border-pink-600 lg:w-2/5 w-4/5 my-1">
+              <div className="border-2 rounded shadow border-pink-600 lg:w-2/5 w-full my-1">
                 <div className="p-3 text-pink-600">
                   <p className="font-2xl font-extrabold">Reasonable Price</p>
                   <p>92 Compliments</p>
                 </div>
               </div>
-              <div className="border-2 rounded shadow border-pink-600 lg:w-2/5 w-4/5 my-1">
+              <div className="border-2 rounded shadow border-pink-600 lg:w-2/5 w-full my-1">
                 <div className="p-3 text-pink-600">
                   <p className="font-2xl font-extrabold">Reasonable Price</p>
                   <p>92 Compliments</p>
@@ -189,23 +211,27 @@ const ProfilePage = () => {
                     />
                   </div>
                   <div className="ml-5 text-pink-600">
-                    <div className="flex flex-row justify-start items-center">
-                      <span role="img" aria-label="star">
-                        ⭐
+                    <div className="flex flex-col md:flex-row md:justify-start md:items-center">
+                      <div>
+                        <span role="img" aria-label="star">
+                          ⭐
+                        </span>
+                        <span role="img" aria-label="star">
+                          ⭐
+                        </span>
+                        <span role="img" aria-label="star">
+                          ⭐
+                        </span>
+                        <span role="img" aria-label="star">
+                          ⭐
+                        </span>
+                        <span role="img" aria-label="star">
+                          ⭐
+                        </span>
+                      </div>
+                      <span className="md:mx-2 font-extrabold">
+                        Miley Cyrus
                       </span>
-                      <span role="img" aria-label="star">
-                        ⭐
-                      </span>
-                      <span role="img" aria-label="star">
-                        ⭐
-                      </span>
-                      <span role="img" aria-label="star">
-                        ⭐
-                      </span>
-                      <span role="img" aria-label="star">
-                        ⭐
-                      </span>
-                      <span className="mx-2 font-extrabold">Miley Cyrus</span>
                       <span className="text-sm">3 months ago</span>
                     </div>
                     <p>
@@ -227,23 +253,27 @@ const ProfilePage = () => {
                     />
                   </div>
                   <div className="ml-5 text-pink-600">
-                    <div className="flex flex-row justify-start items-center">
-                      <span role="img" aria-label="star">
-                        ⭐
+                    <div className="flex flex-col md:flex-row md:justify-start md:items-center">
+                      <div>
+                        <span role="img" aria-label="star">
+                          ⭐
+                        </span>
+                        <span role="img" aria-label="star">
+                          ⭐
+                        </span>
+                        <span role="img" aria-label="star">
+                          ⭐
+                        </span>
+                        <span role="img" aria-label="star">
+                          ⭐
+                        </span>
+                        <span role="img" aria-label="star">
+                          ⭐
+                        </span>
+                      </div>
+                      <span className="md:mx-2 font-extrabold">
+                        Miley Cyrus
                       </span>
-                      <span role="img" aria-label="star">
-                        ⭐
-                      </span>
-                      <span role="img" aria-label="star">
-                        ⭐
-                      </span>
-                      <span role="img" aria-label="star">
-                        ⭐
-                      </span>
-                      <span role="img" aria-label="star">
-                        ⭐
-                      </span>
-                      <span className="mx-2 font-extrabold">Miley Cyrus</span>
                       <span className="text-sm">3 months ago</span>
                     </div>
                     <p>
@@ -266,23 +296,27 @@ const ProfilePage = () => {
                     />
                   </div>
                   <div className="ml-5 text-pink-600">
-                    <div className="flex flex-row justify-start items-center">
-                      <span role="img" aria-label="star">
-                        ⭐
+                    <div className="flex flex-col md:flex-row md:justify-start md:items-center">
+                      <div>
+                        <span role="img" aria-label="star">
+                          ⭐
+                        </span>
+                        <span role="img" aria-label="star">
+                          ⭐
+                        </span>
+                        <span role="img" aria-label="star">
+                          ⭐
+                        </span>
+                        <span role="img" aria-label="star">
+                          ⭐
+                        </span>
+                        <span role="img" aria-label="star">
+                          ⭐
+                        </span>
+                      </div>
+                      <span className="md:mx-2 font-extrabold">
+                        Miley Cyrus
                       </span>
-                      <span role="img" aria-label="star">
-                        ⭐
-                      </span>
-                      <span role="img" aria-label="star">
-                        ⭐
-                      </span>
-                      <span role="img" aria-label="star">
-                        ⭐
-                      </span>
-                      <span role="img" aria-label="star">
-                        ⭐
-                      </span>
-                      <span className="mx-2 font-extrabold">Miley Cyrus</span>
                       <span className="text-sm">3 months ago</span>
                     </div>
                     <p>
@@ -293,6 +327,7 @@ const ProfilePage = () => {
                     </p>
                   </div>
                 </div>
+
                 <div className="flex flex-row py-4 border-t-4 border-pink-600">
                   <button className="w-full bg-pink-500 outline-none focus:outline-none py-4 text-white font-extrabold my-1 hover:bg-white hover:text-pink-600 border border-transparent hover:border-pink-600">
                     Load more reviews
@@ -302,7 +337,68 @@ const ProfilePage = () => {
             </div>
           </div>
         </div>
-        <div className="border-2 border-pink-600 w-1/3 py-5 lg:ml-1">SSSS</div>
+        <hr className="lg:hidden" />
+        <div className="flex flex-col w-full lg:w-1/3 lg:ml-1">
+          <div className="lg:border-2 border-pink-600 py-5 lg:rounded">
+            <div className="mb-5 text-pink-600 px-5">
+              <p className="font-1xl font-extrabold">Contact Person</p>
+              <p>Ahmad Faris</p>
+            </div>
+            <div className="mb-5 text-pink-600 px-5">
+              <p className="font-1xl font-extrabold">Company Address</p>
+              <p>
+                Mutiara Serdang, 6-31, Jalan Serdang Raya, 43300, Seri
+                Kembangan, Selangor
+              </p>
+            </div>
+            <div className="mb-5 text-pink-600 px-5">
+              <p className="font-1xl font-extrabold">Registration No.</p>
+              <p>002503879-H</p>
+            </div>
+          </div>
+          <hr className="lg:hidden" />
+          <div className="px-5 my-5">
+            <p className="font-1xl font-extrabold text-pink-600">
+              Related Services
+            </p>
+            <div className="flex flex-col text-pink-600">
+              <div className="flex flex-row w-full my-5">
+                <div className="mr-2">
+                  <canvas
+                    className="bg-pink-600 "
+                    width={50}
+                    height={50}
+                  ></canvas>
+                </div>
+                <div>
+                  <p className="font-semibold">Aircond Services</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing </p>
+                </div>
+              </div>
+              <div className="flex flex-row w-full my-5">
+                <div className="mr-2">
+                  <canvas
+                    className="bg-pink-600 "
+                    width={50}
+                    height={50}
+                  ></canvas>
+                </div>
+                <div>
+                  <p className="font-semibold">Plumbing Services</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="fixed bottom-0 p-5 bg-pink-600 w-full text-white mt-20 md:hidden">
+        <p className="font-extrabold">Need this service?</p>
+        <button className="w-full bg-pink-500 outline-none focus:outline-none py-4 text-white font-extrabold my-1 hover:bg-white hover:text-pink-600 border border-transparent hover:border-pink-600">
+          Submit a request
+        </button>
+        <p className="text-sm text-center mt-1">Terms & conditions apply</p>
       </div>
     </div>
   );

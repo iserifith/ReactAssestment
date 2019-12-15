@@ -1,5 +1,24 @@
 @import "./tailwind.css";
 
-.avatar {
-  margin-top: -100px;
+@media (min-width: 1280px) {
+  .avatar {
+    margin-top: -100px;
+  }
+}
+
+.view_more {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.view_more > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.view_more > img {
+  filter: grayscale(100%);
 }
